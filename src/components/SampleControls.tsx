@@ -3,10 +3,9 @@ import heatMapData from '../mockData/heatMapData.json'
 import { useSelector } from 'react-redux'
 import { MapState } from '@/store/slicers/mapSlice'
 //@ts-ignore
-const SampleControls = ({ initMap }) => {
+const SampleControls = () => {
 	//@ts-ignore
 	const map = useSelector((state) => state as MapState).map.map
-	console.log('initMap', initMap)
 	function handleHeatMap() {
 		heatMapData.features.forEach((f) => {
 			//@ts-ignore
